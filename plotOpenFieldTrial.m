@@ -13,9 +13,9 @@ if nCols ~= 2
     return;
 end
 
-if (~exist('SCALE', 'var'))
+if (~exist('XYSCALE', 'var'))
     warning('SCALE missing - defaulting to 1');
-    SCALE = 1;
+    XYSCALE = 1;
 end
 
 if (~exist('FRAMERATE', 'var'))

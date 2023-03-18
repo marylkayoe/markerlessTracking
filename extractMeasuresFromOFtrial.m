@@ -40,7 +40,7 @@ nFRAMES = length(coordData);
 
 
 speedArray = getVelocityFromTraj(coordData, 1, FRAMERATE, 1, FRAMERATE);
-displacement = cumsum(speedArray(1:FRAMERATE:end));
+displacement = cumsum(speedArray(1:floor(FRAMERATE):end));
 distTravelled = displacement(end);
 maxSpeed = max(speedArray);
 
